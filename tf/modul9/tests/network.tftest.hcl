@@ -10,7 +10,7 @@ run "subnettet_har_riktig_cidr" {
   command = plan
 
   assert {
-    condition     = azurerm_subnet.this.address_prefixes[0] == "10.0.0.1/24"
+    condition     = azurerm_subnet.this.address_prefixes[0] == "10.0.1.0/24"
     error_message = "Subnettet skal ha CIDR 10.0.1.0/24."
   }
 }

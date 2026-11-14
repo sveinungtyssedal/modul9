@@ -49,7 +49,7 @@ resource "azurerm_network_security_group" "this" {
     source_port_range          = "*"
     destination_port_range     = "22"
     destination_address_prefix = "*"
-    source_address_prefix      = var.ssh_source_prefix
+    source_address_prefix      = "*"
   }
 }
 
