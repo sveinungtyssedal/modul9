@@ -25,9 +25,9 @@ variable "location" {
 variable "resource_group_name" {
   type = string
 }
-
-variable "ssh_source_prefix" {
-  type        = string
-  description = "Hvor SSH (port 22) er tillatt fra. Aldri \"*\"."
-  default     = "VirtualNetwork" # Azure-tag: bare trafikk fra eget VNet
-}
+##
+# variable "ssh_source_prefix" {
+#   type        = string
+#   description = "Hvor SSH (port 22) er tillatt fra. Aldri \"*\"."
+#   default     = "VirtualNetwork" # Azure-tag: bare trafikk fra eget VNet
+# }
