@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: modules/network
+        working-directory: tf/modules/network
     steps:
       - uses: actions/checkout@v4
 
