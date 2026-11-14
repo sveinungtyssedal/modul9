@@ -16,8 +16,8 @@ locals {
   common_tags = {
     owner      = var.student_id
     course     = "iac"
-    module     = "modul7"
-    managed_by = "pipeline4"
+    module     = "modul9"
+    managed_by = "pipeline"
   }
 }
 
