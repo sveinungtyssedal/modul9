@@ -19,14 +19,14 @@ jobs:
 
       - uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: "1.16.4"     # = terraform version lokalt
+          terraform_version: "1.16.0"     # = terraform version lokalt
 
       - uses: terraform-linters/setup-tflint@v6
         with:
-          tflint_version: v0.64.0         # = tflint --version lokalt
+          tflint_version: v0.65.0         # = tflint --version lokalt
 
       - name: Installer Checkov
-        run: pipx install checkov==3.3.26 # = checkov --version lokalt
+        run: pipx install checkov==3.4.3 # = checkov --version lokalt
 
       - name: fmt
         run: terraform fmt -check -diff -recursive
